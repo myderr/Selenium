@@ -51,6 +51,7 @@ bool check_update_chromedriver()
         {
             return false;
         }
+        driverVersion = get_version();
     }
     driver_main_version = int.Parse(driverVersion.Split(".")[0]);
     if (driver_main_version != chrome_main_version)
